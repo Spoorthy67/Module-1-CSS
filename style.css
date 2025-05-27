@@ -234,3 +234,10 @@ select:focus {
         column-count: 1;
     }
 }
+
+/* ------------------------ */
+/* Debugging Helpers (optional) */
+/* ------------------------ */
+.debug-border * {
+    border: 1px dashed red;
+}
