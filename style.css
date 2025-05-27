@@ -1,64 +1,27 @@
 /* styles.css */
 
-/* Reset margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Table base styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
 }
 
-/* Body and font styles as before */
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/cityscape.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+/* Table header styles */
+th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
-/* Navigation menu styles (assuming a <nav> with a <ul>) */
-nav ul {
-    list-style-type: none; /* Remove bullets */
-    list-style-position: inside;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Horizontal menu */
-    gap: 20px;
+/* Table data cell styles */
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-nav ul li {
-    padding: 5px 10px;
-}
-
-/* Link styles */
-a:link {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #5a5a5a;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #003d80;
-}
-
-/* Styled unordered lists outside navigation (e.g., event features) */
-ul.custom-list {
-    list-style-type: square; /* square bullets */
-    list-style-position: outside;
-    margin-left: 20px;
-}
-
-ul.custom-list li {
-    padding: 5px 0;
-}
+/* Zebra striping fo*
