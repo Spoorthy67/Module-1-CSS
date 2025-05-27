@@ -1,8 +1,5 @@
 /* styles.css */
 
-/* Import Google Font - Example: 'Roboto' */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 /* Reset margin and padding */
 * {
     margin: 0;
@@ -10,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Body styles with background image and fallback color */
+/* Body and font styles as before */
 body {
     background-color: #f0f8ff;
     background-image: url('images/cityscape.jpg');
@@ -22,45 +19,46 @@ body {
     line-height: 1.6;
 }
 
-/* Style for banner with ID selector */
-#mainHeader {
-    background: linear-gradient(90deg, rgba(0,64,128,1) 0%, rgba(0,120,215,1) 100%);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+/* Navigation menu styles (assuming a <nav> with a <ul>) */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal menu */
+    gap: 20px;
 }
 
-/* Style for all h2 elements */
-h2 {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: 700;
+nav ul li {
+    padding: 5px 10px;
 }
 
-/* Style for event containers using class selector */
-.eventCard {
-    background-color: rgba(230, 242, 255, 0.8);
-    border: 1px solid #b3d1ff;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
+/* Link styles */
+a:link {
+    color: #007BFF;
+    text-decoration: none;
 }
 
-/* Grouping selector for h3 and p elements */
-h3, p {
-    font-family: 'Roboto', sans-serif;
-    color: #555;
+a:visited {
+    color: #5a5a5a;
 }
 
-/* Description text styles */
-.description {
-    text-align: justify;
-    text-transform: none;
-    letter-spacing: 0.5px;
-    line-height: 1.8;
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #003d80;
+}
+
+/* Styled unordered lists outside navigation (e.g., event features) */
+ul.custom-list {
+    list-style-type: square; /* square bullets */
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+ul.custom-list li {
+    padding: 5px 0;
 }
